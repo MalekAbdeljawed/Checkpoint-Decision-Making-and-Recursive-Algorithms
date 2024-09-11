@@ -1,0 +1,10 @@
+// Séquence de Fibonacci
+Fonction fibonacci(n)
+    Si (n <= 0) alors
+        Retourner 0
+    Sinon Si (n = 1) alors
+        Retourner 1
+    Sinon
+        Retourner fibonacci(n-1) + fibonacci(n-2)
+    Fin Si
+Fin Fonction

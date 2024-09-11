@@ -1,0 +1,22 @@
+// Conseiller vestimentaire en fonction de la météo
+Fonction conseiller_vetement(temperature, pluie)
+    Si (temperature < 50) alors
+        Si (pluie = VRAI) alors
+            Retourner "Portez un manteau épais et prenez un parapluie."
+        Sinon
+            Retourner "Portez un manteau épais."
+        Fin Si
+    Sinon Si (50 <= temperature < 70) alors
+        Si (pluie = VRAI) alors
+            Retourner "Portez une veste légère et prenez un parapluie."
+        Sinon
+            Retourner "Portez une veste légère."
+        Fin Si
+    Sinon
+        Si (pluie = VRAI) alors
+            Retourner "Portez des vêtements décontractés et prenez un parapluie."
+        Sinon
+            Retourner "Portez des vêtements décontractés."
+        Fin Si
+    Fin Si
+Fin Fonction

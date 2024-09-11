@@ -1,0 +1,16 @@
+// Vérificateur d'année bissextile
+Fonction est_annee_bissextile(année)
+    Si (année % 4 = 0) alors
+        Si (année % 100 = 0) alors
+            Si (année % 400 = 0) alors
+                Retourner VRAI
+            Sinon
+                Retourner FAUX
+            Fin Si
+        Sinon
+            Retourner VRAI
+        Fin Si
+    Sinon
+        Retourner FAUX
+    Fin Si
+Fin Fonction

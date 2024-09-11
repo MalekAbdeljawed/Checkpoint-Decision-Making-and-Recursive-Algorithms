@@ -1,0 +1,15 @@
+//Vérificateur de palindrome
+Fonction est_palindrome(chaine)
+    Nettoyer chaîne en enlevant les espaces, la ponctuation et en convertissant en minuscules
+    Fonction verifier_palindrome(chaine, gauche, droite)
+        Si (gauche >= droite) alors
+            Retourner VRAI
+        Sinon Si (chaine[gauche] ≠ chaine[droite]) alors
+            Retourner FAUX
+        Sinon
+            Retourner verifier_palindrome(chaine, gauche + 1, droite - 1)
+        Fin Si
+    Fin Fonction
+    
+    Retourner verifier_palindrome(chaine, 0, longueur(chaine) - 1)
+Fin Fonction
